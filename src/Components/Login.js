@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { useDispatch } from 'react-redux';
+import { useNavigate } from 'react-router-dom'; // Import the useNavigate hook
 
 const Login = () => {
   const dispatch = useDispatch();
+  const navigate = useNavigate(); // Use useNavigate hook for redirect
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
@@ -17,6 +19,8 @@ const Login = () => {
       .then((res) => {
         if (res.status === 200) {
           dispatch({ type: 'LOGIN_SUCCESS', payload: res.data });
+          console.log(res);
+          navigate('/profile'); // Redirect to the profile page
         } else {
           setError(res.data.error);
         }
@@ -53,3 +57,4 @@ const Login = () => {
 };
 
 export default Login;
+

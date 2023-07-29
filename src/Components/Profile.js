@@ -19,13 +19,13 @@ const Profile = () => {
   }, [user]);
 
   return (
-    <div>
+    <div className='form'>
       <h2>Profile</h2>
       {userData ? (
         <div>
-          <p>Username: {userData.username}</p>
-          <p>Email: {userData.email}</p>
-          {/* Add other user details here */}
+          <p><strong>Username: </strong>{userData.username}</p>
+          <p><strong>Email: </strong>{userData.email}</p>
+         
         </div>
       ) : (
         <p>Loading...</p>
