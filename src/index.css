@@ -11,3 +11,36 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.form{
+  color: black;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0rem 2rem;
+  }
+  
+  .items{
+    color: black;
+    background-color: white;
+    border: none;
+    padding: 0.5rem 0rem;
+    border-bottom: 1px solid black;
+    
+  }
+  input:focus {
+    outline: none;
+  }
+  
+  button{
+  color:  white;
+  background-color: blue;
+  border: none;
+  padding: 0.5rem 0;
+  }
+  .red{
+    color: red;
+  }
+  .green{
+    color:green;
+  }
