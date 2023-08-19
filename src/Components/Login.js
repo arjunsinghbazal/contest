@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { useDispatch } from 'react-redux';
-import { useNavigate } from 'react-router-dom'; // Import the useNavigate hook
+import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
   const dispatch = useDispatch();
-  const navigate = useNavigate(); // Use useNavigate hook for redirect
+  const navigate = useNavigate(); 
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
