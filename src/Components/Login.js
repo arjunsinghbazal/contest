@@ -33,7 +33,7 @@ const Login = () => {
 
   return (
     <div className='form'>
-      <h2>Login</h2>
+      <h2>Login to your Account</h2>
       <input
         className='items'
         type="text"
@@ -50,7 +50,8 @@ const Login = () => {
         onChange={(e) => setPassword(e.target.value)}
       />
       <br />
-      <button onClick={handleLogin}>Login</button>
+      <button onClick={handleLogin}>Continue</button>
+      <h1>Forget Password?</h1>
       {error && <p style={{ color: 'red' }}>{error}</p>}
     </div>
   );
