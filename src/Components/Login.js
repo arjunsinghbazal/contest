@@ -51,7 +51,7 @@ const Login = () => {
       />
       <br />
       <button onClick={handleLogin}>Continue</button>
-      <h1>Forget Password?</h1>
+      <p className='blue'>Forget Password?</p>
       {error && <p style={{ color: 'red' }}>{error}</p>}
     </div>
   );
