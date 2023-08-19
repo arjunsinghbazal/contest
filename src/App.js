@@ -9,7 +9,6 @@ function App() {
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route path="/profile" element={<Profile />} />
-        {/* Add a default route to handle the root path */}
         <Route path="/" element={<Login />} />
       </Routes>
     </Router>
