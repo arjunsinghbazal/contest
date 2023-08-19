@@ -28,7 +28,7 @@ const Profile = () => {
          
         </div>
       ) : (
-        <p>Loading...</p>
+        <p>Loading....</p>
       )}
     </div>
   );
